@@ -10,19 +10,11 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   </head>
   <body>
+    <div id="header">
+      <h3><a href="{{ "/" | relative_url }}">SUBJECT OF INFORMATION</a></h1>
+    </div>
     <div class="entry">
       {{ content }}
-    </div>
-    <div id="footer">
-      <nav>
-        <ul>
-          <li><a href="{{ "/" | relative_url }}">Home</a></li>
-          <li><a href="{{ "/feed.xml" | relative_url }}">RSS</a></li>
-        </ul>
-      </nav>
-      <div id="credits">
-        <span></span>
-      </div>
     </div>
   </body>
 </html>
