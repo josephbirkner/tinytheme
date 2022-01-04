@@ -10,15 +10,8 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   </head>
   <body>
-    <div class="flexbox">
-      <div class="left">
-        <h1><a href="{{ "/" | relative_url }}">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</a></h1>
-      </div>
-      <div class="right">
-        <div class="entry">
-          {{ content }}
-        </div>
-      </div>
+    <div class="entry">
+      {{ content }}
     </div>
     <div id="footer">
       <nav>
